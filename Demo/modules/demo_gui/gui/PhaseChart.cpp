@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "PhaseChart.h"
-
 //------------------------------------------------------------------------------
 
 PhaseChart::PhaseChart (FilterListeners& listeners)

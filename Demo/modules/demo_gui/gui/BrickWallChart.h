@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_BRICKWALLCHART_H
 #define DSPDEMO_BRICKWALLCHART_H
 
-#include "FilterChart.h"
-
 /*
  * Displays the magnitude response of a Dsp::Filter.
  * This is sometimes referred to as a "brick wall diagram"

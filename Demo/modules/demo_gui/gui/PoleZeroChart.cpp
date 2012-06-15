@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "PoleZeroChart.h"
-
 PoleZeroChart::PoleZeroChart (FilterListeners& listeners)
   : FilterChart (listeners)
 {
@@ -48,12 +45,12 @@ const String PoleZeroChart::getName () const
 
 void PoleZeroChart::paintContents (Graphics& g)
 {
-	Colour cPole (0xd0ff0000);
-	Colour cZero (0xd02020ff);
+  Colour cPole (0xd0ff0000);
+  Colour cZero (0xd02020ff);
 	
-	Rectangle<int> bounds = getLocalBounds();
+  Rectangle<int> bounds = getLocalBounds();
 
-	short size = (jmin (getWidth(), getHeight()) + 2) / 3;
+  short size = short ((jmin (getWidth(), getHeight()) + 2) / 3);
 
   // scale the graph down if the pole/zeroes lie outside the unit disc
   AffineTransform t = AffineTransform::identity;

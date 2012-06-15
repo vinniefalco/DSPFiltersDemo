@@ -33,11 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "GroupDelayChart.h"
-
-//------------------------------------------------------------------------------
-
 GroupDelayChart::GroupDelayChart (FilterListeners& listeners)
   : FilterChart (listeners)
 {

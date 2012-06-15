@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "SliderGroup.h"
-
 SliderGroup::Model::~Model ()
 {
 }

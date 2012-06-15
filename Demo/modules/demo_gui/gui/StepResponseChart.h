@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_STEPRESPONSECHART_H
 #define DSPDEMO_STEPRESPONSECHART_H
 
-#include "FilterChart.h"
-
 /*
  * Displays the step response of a Dsp::Filter
  *

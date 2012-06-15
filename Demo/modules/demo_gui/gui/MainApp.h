@@ -36,10 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_MAINAPP_H
 #define DSPDEMO_MAINAPP_H
 
-#include "Common.h"
-#include "AudioOutput.h"
-#include "MainWindow.h"
-
 class MainApp : public JUCEApplication
 {
 public:

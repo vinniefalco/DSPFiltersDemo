@@ -36,9 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_CPUMETER_H
 #define DSPDEMO_CPUMETER_H
 
-#include "Common.h"
-#include "ResizableLayout.h"
-
 /*
  * Simple CPU meter. Note this measures overall consumption in
  * the Audio callback (via Juce), not the overall system CPU usage.

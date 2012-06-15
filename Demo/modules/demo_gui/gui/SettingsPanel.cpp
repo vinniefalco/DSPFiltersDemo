@@ -33,10 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "MainApp.h"
-#include "SettingsPanel.h"
-
 SettingsPanel::SettingsPanel ()
 {
   setSize (800, 600);

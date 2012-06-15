@@ -36,10 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_MAINPANEL_H
 #define DSPDEMO_MAINPANEL_H
 
-#include "Common.h"
-#include "ResizableLayout.h"
-#include "FilterListener.h"
-
 class MainPanel :
 	public Component,
   public MenuBarModel,

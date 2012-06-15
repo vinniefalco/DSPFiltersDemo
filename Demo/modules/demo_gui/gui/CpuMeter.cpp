@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "CpuMeter.h"
-
 CpuMeter::CpuMeter (AudioDeviceManager& audioDeviceManager)
 : ResizableLayout (this)
 , m_audioDeviceManager (audioDeviceManager)

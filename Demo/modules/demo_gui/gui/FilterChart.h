@@ -36,9 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_FILTERCHART_H
 #define DSPDEMO_FILTERCHART_H
 
-#include "DspFilters/Filter.h"
-#include "FilterListener.h"
-
 /*
  * Provides some common functionality for displayed charts.
  *

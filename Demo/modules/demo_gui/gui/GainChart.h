@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_GAINCHART_H
 #define DSPDEMO_GAINCHART_H
 
-#include "FilterChart.h"
-
 /*
  * Displays the gain response of a Dsp::Filter in decibels
  *

@@ -33,10 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "CustomSlider.h"
-#include "FilterControls.h"
-
 class FilterParamSliderGroupModel : public SliderGroup::Model
 {
 public:

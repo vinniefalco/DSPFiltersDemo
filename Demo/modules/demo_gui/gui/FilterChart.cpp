@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "FilterChart.h"
-
 FilterChart::FilterChart (FilterListeners& listeners)
   : m_listeners (listeners)
   , m_filter (0)

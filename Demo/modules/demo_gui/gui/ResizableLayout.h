@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef RESIZABLELAYOUT_H
 #define RESIZABLELAYOUT_H
 
-#include "Common.h"
-
 //==============================================================================
 /**
   Smoothly repositions and resizes child Components without rounding errors,

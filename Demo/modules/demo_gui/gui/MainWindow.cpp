@@ -33,11 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "ContentComponentConstrainer.h"
-#include "MainWindow.h"
-#include "MainPanel.h"
-
 MainWindow::MainWindow () 
   : DocumentWindow (TRANS("DSP Filters"),
                     Colours::lightgrey, 

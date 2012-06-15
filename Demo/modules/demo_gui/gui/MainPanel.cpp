@@ -33,22 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "binaries.h"
-#include "BrickWallChart.h"
-#include "CpuMeter.h"
-#include "CustomSlider.h"
-#include "FilterControls.h"
-#include "GainChart.h"
-#include "GroupDelayChart.h"
-#include "MainApp.h"
-#include "MainPanel.h"
-#include "NoiseAudioSource.h"
-#include "PhaseChart.h"
-#include "PoleZeroChart.h"
-#include "ResamplingReader.h"
-#include "StepResponseChart.h"
-
 MainPanel::MainPanel()
 	: TopLevelResizableLayout (this)
   , m_lastTypeId (0)

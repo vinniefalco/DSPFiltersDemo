@@ -36,11 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_FILTERCONTROLS_H
 #define DSPDEMO_FILTERCONTROLS_H
 
-#include "Common.h"
-#include "FilterListener.h"
-#include "ResizableLayout.h"
-#include "SliderGroup.h"
-
 /*
  * Creates filter Gui controls dynamically, using
  * the introspection features of Dsp::Filter.

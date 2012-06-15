@@ -33,11 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "GainChart.h"
-
-//------------------------------------------------------------------------------
-
 GainChart::GainChart (FilterListeners& listeners)
   : FrequencyChart (listeners)
   , m_maxDb (0)

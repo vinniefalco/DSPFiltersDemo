@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_GROUPDELAYCHART_H
 #define DSPDEMO_GROUPDELAYCHART_H
 
-#include "FilterChart.h"
-
 /*
  * Displays the group delay of a Dsp::Filter in seconds
  *

@@ -145,6 +145,7 @@
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\modules\demo_core\demo_core.cpp"/>
+    <ClCompile Include="..\..\modules\demo_gui\demo_gui.cpp"/>
     <ClCompile Include="..\..\modules\demo_gui\gui\BrickWallChart.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -197,6 +198,8 @@
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.cpp"/>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.cpp"/>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_processors_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_utils_amalgam.cpp"/>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.cpp"/>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.cpp"/>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.cpp"/>
@@ -214,6 +217,7 @@
     <ClInclude Include="..\..\modules\demo_core\core\ResamplingReader.h"/>
     <ClInclude Include="..\..\modules\demo_core\core\ThreadQueue.h"/>
     <ClInclude Include="..\..\modules\demo_core\demo_core.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\demo_gui.h"/>
     <ClInclude Include="..\..\modules\demo_gui\gui\BrickWallChart.h"/>
     <ClInclude Include="..\..\modules\demo_gui\gui\ContentComponentConstrainer.h"/>
     <ClInclude Include="..\..\modules\demo_gui\gui\CpuMeter.h"/>
@@ -235,6 +239,8 @@
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.h"/>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.h"/>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_processors_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_utils_amalgam.h"/>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.h"/>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.h"/>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.h"/>

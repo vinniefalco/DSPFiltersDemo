@@ -33,30 +33,47 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#ifndef DSPDEMO_POLEZEROCHART_H
-#define DSPDEMO_POLEZEROCHART_H
+#ifndef DSPFILTERS_DEMO_GUI_HEADER
+#define DSPFILTERS_DEMO_GUI_HEADER
 
-/*
- * Displays the poles and zeros of a Dsp::Filter
- *
- */
-class PoleZeroChart : public FilterChart
-{
-public:
-  PoleZeroChart (FilterListeners& listeners);
+#include "juce_audio_utils_amalgam.h"
+#include "juce_core_amalgam.h"
+#include "juce_graphics_amalgam.h"
+#include "juce_gui_basics_amalgam.h"
+#include "juce_gui_extra_amalgam.h"
 
-  const String getName () const;
+#include "../demo_core/demo_core.h"
 
-	void paintContents (Graphics& g);
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4100) // unreferenced formal parameter
+#pragma warning (disable: 4512) // assignment operator could not be generated
+#endif
 
-private:
-  void clear ();
-  void update ();
-  void addPoleZeros (const std::vector<Dsp::PoleZeroPair>& vpz);
+#include "gui/CustomSlider.h"
+#include "gui/FilterChart.h"
+#include "gui/ResizableLayout.h"
+#include "gui/SliderGroup.h"
 
-private:
-  double m_max;
-  std::vector<Dsp::PoleZeroPair> m_vpz;
-};
+#include "gui/BrickWallChart.h"
+#include "gui/ContentComponentConstrainer.h"
+#include "gui/CpuMeter.h"
+#include "gui/FilterControls.h"
+#include "gui/GainChart.h"
+#include "gui/GroupDelayChart.h"
+#include "gui/MainPanel.h"
+#include "gui/MainWindow.h"
+#include "gui/PhaseChart.h"
+#include "gui/PoleZeroChart.h"
+#include "gui/SettingsPanel.h"
+#include "gui/SettingsWindow.h"
+#include "gui/StepResponseChart.h"
+
+#include "gui/MainApp.h"
+
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif
 
 #endif
+

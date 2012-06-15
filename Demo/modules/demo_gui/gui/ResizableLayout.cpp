@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "ResizableLayout.h"
-
 const Point<int> ResizableLayout::anchorNone			  ( -1, -1 );
 const Point<int> ResizableLayout::anchorTopLeft		  ( 0, 0 );
 const Point<int> ResizableLayout::anchorTopCenter		( anchorUnit/2, 0 );

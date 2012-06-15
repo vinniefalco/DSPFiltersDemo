@@ -58,6 +58,8 @@
         <FILE id="eu6e89" name="demo_core.h" compile="0" resource="0" file="../../modules/demo_core/demo_core.h"/>
       </GROUP>
       <GROUP id="{A8331466-A414-3095-E30F-9BBC4C881769}" name="demo_gui">
+        <FILE id="sIFGU4" name="demo_gui.cpp" compile="1" resource="0" file="../../modules/demo_gui/demo_gui.cpp"/>
+        <FILE id="dNpShQ" name="demo_gui.h" compile="0" resource="0" file="../../modules/demo_gui/demo_gui.h"/>
         <GROUP id="{292DFAD2-D38D-CDFF-072A-8CC8ABFD7739}" name="gui">
           <FILE id="Hd82uO" name="BrickWallChart.cpp" compile="0" resource="0"
                 file="../../modules/demo_gui/gui/BrickWallChart.cpp"/>
@@ -133,6 +135,18 @@
             file="../../../JUCEAmalgam/include/juce_audio_formats_amalgam.h"/>
       <FILE id="RgMHyG" name="juce_audio_formats_amalgam.mm" compile="1"
             resource="0" file="../../../JUCEAmalgam/include/juce_audio_formats_amalgam.mm"/>
+      <FILE id="VyvI42" name="juce_audio_processors_amalgam.cpp" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_processors_amalgam.cpp"/>
+      <FILE id="JCIdAu" name="juce_audio_processors_amalgam.h" compile="0"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_processors_amalgam.h"/>
+      <FILE id="ExVCES" name="juce_audio_processors_amalgam.mm" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_processors_amalgam.mm"/>
+      <FILE id="Ln6zev" name="juce_audio_utils_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_utils_amalgam.cpp"/>
+      <FILE id="a4RXxZ" name="juce_audio_utils_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_utils_amalgam.h"/>
+      <FILE id="Gt2gQw" name="juce_audio_utils_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_utils_amalgam.mm"/>
       <FILE id="LEFo6v" name="juce_core_amalgam.cpp" compile="1" resource="0"
             file="../../../JUCEAmalgam/include/juce_core_amalgam.cpp"/>
       <FILE id="QmbG7i" name="juce_core_amalgam.h" compile="0" resource="0"

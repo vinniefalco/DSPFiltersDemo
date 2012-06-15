@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef CONTENTCOMPONENTCONSTRAINER_H
 #define CONTENTCOMPONENTCONSTRAINER_H
 
-#include "Common.h"
-
 // "shim" which goes between your constrainer and a ResizableWindow
 // or derived class. This will adjust the parameters of the associated
 // constrainer so that all constraints are based on the content component

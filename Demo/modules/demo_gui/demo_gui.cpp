@@ -33,30 +33,33 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#ifndef DSPDEMO_POLEZEROCHART_H
-#define DSPDEMO_POLEZEROCHART_H
+#include "demo_gui.h"
 
-/*
- * Displays the poles and zeros of a Dsp::Filter
- *
- */
-class PoleZeroChart : public FilterChart
-{
-public:
-  PoleZeroChart (FilterListeners& listeners);
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4100) // unreferenced formal parameter
+#pragma warning (disable: 4127) // conditional expression is constant
+#pragma warning (disable: 4355) // 'this' used in base member initializer list
+#pragma warning (disable: 4512) // assignment operator could not be generated
+#endif
 
-  const String getName () const;
+#include "gui/BrickWallChart.cpp"
+#include "gui/CpuMeter.cpp"
+#include "gui/FilterChart.cpp"
+#include "gui/FilterControls.cpp"
+#include "gui/GainChart.cpp"
+#include "gui/GroupDelayChart.cpp"
+#include "gui/MainApp.cpp"
+#include "gui/MainPanel.cpp"
+#include "gui/MainWindow.cpp"
+#include "gui/PhaseChart.cpp"
+#include "gui/PoleZeroChart.cpp"
+#include "gui/ResizableLayout.cpp"
+#include "gui/SettingsPanel.cpp"
+#include "gui/SettingsWindow.cpp"
+#include "gui/SliderGroup.cpp"
+#include "gui/StepResponseChart.cpp"
 
-	void paintContents (Graphics& g);
-
-private:
-  void clear ();
-  void update ();
-  void addPoleZeros (const std::vector<Dsp::PoleZeroPair>& vpz);
-
-private:
-  double m_max;
-  std::vector<Dsp::PoleZeroPair> m_vpz;
-};
-
+#ifdef _MSC_VER
+#pragma warning (pop)
 #endif

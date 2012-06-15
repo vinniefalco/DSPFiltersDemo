@@ -33,10 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "MainApp.h"
-#include "SettingsWindow.h"
-
 MainApp* MainApp::s_app = 0;
 
 MainApp::MainApp()

@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_SETTINGSWINDOW_H
 #define DSPDEMO_SETTINGSWINDOW_H
 
-#include "Common.h"
-
 class SettingsWindow : public DialogWindow
 {
 public:

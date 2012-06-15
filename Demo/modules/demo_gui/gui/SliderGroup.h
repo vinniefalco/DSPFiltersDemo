@@ -36,10 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_SLIDERGROUP_H
 #define DSPDEMO_SLIDERGROUP_H
 
-#include "Common.h"
-#include "CustomSlider.h"
-#include "ResizableLayout.h"
-
 /*
  * A composite control which includes a rotary knob,
  * name label, and an editable text box that displays the value.

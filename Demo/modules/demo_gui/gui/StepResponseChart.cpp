@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "StepResponseChart.h"
-
 //------------------------------------------------------------------------------
 
 StepResponseChart::StepResponseChart (FilterListeners& listeners)

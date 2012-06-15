@@ -52,6 +52,9 @@
     <ClCompile Include="..\..\modules\demo_core\demo_core.cpp">
       <Filter>DSPFiltersDemo\Demo\demo_core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\demo_gui.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\modules\demo_gui\gui\BrickWallChart.cpp">
       <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
     </ClCompile>
@@ -121,6 +124,18 @@
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.mm">
       <Filter>DSPFiltersDemo\JUCE</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_processors_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_processors_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_utils_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_utils_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.cpp">
       <Filter>DSPFiltersDemo\JUCE</Filter>
     </ClCompile>
@@ -186,6 +201,9 @@
     <ClInclude Include="..\..\modules\demo_core\demo_core.h">
       <Filter>DSPFiltersDemo\Demo\demo_core</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\demo_gui.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\modules\demo_gui\gui\BrickWallChart.h">
       <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
     </ClInclude>
@@ -247,6 +265,12 @@
       <Filter>DSPFiltersDemo\JUCE</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_processors_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_utils_amalgam.h">
       <Filter>DSPFiltersDemo\JUCE</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.h">

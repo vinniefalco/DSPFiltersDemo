@@ -33,10 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "SettingsPanel.h"
-#include "SettingsWindow.h"
-
 SettingsWindow::SettingsWindow ()
 : DialogWindow (TRANS("Settings"),
                 Colour (192,192,192),

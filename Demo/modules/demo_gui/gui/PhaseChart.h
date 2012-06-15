@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_PHASECHART_H
 #define DSPDEMO_PHASECHART_H
 
-#include "FilterChart.h"
-
 /*
  * Displays the phase response of a Dsp::Filter in degrees
  *
