@@ -6,9 +6,11 @@
     <XCODE_MAC targetFolder="../MacOSX" juceFolder="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="DSPFiltersDemo"
-                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       headerPath="../../../DSPFilters;../../../JUCEAmalgam/include"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="DSPFiltersDemo"
-                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       headerPath="../../../DSPFilters;../../../JUCEAmalgam/include"/>
       </CONFIGURATIONS>
     </XCODE_MAC>
     <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="">
@@ -22,9 +24,9 @@
     <LINUX_MAKE targetFolder="../Linux" juceFolder="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
-                       targetName="DSPFiltersDemo"/>
+                       targetName="DSPFiltersDemo" headerPath="../../../DSPFilters;../../../JUCEAmalgam/include"/>
         <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="2"
-                       targetName="DSPFiltersDemo"/>
+                       targetName="DSPFiltersDemo" headerPath="../../../DSPFilters;../../../JUCEAmalgam/include"/>
       </CONFIGURATIONS>
     </LINUX_MAKE>
   </EXPORTFORMATS>

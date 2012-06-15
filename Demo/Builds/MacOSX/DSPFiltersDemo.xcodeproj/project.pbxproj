@@ -238,7 +238,7 @@
 				96B0B276D85C7FCD337A9C43 ); name = Source; sourceTree = "<group>"; };
 		8C5A9C70706B158110D3D777 = { isa = XCBuildConfiguration; buildSettings = {
 				SRCROOT = "../Jucer";
-				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode $(inherited)";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../../DSPFilters ../../../JUCEAmalgam/include $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -255,7 +255,7 @@
 				"JUCER_XCODE_MAC_8DF12694=1"); }; name = Debug; };
 		2C2E2CC959CE76C4EE0FB1F0 = { isa = XCBuildConfiguration; buildSettings = {
 				SRCROOT = "../Jucer";
-				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode $(inherited)";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode ../../../DSPFilters ../../../JUCEAmalgam/include $(inherited)";
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
