@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+		770349936140DF78B71542C1 = { isa = PBXBuildFile; fileRef = 7022F9128C82661F23258F40; };
+		3191001462A535BEA50717C1 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSPFiltersDemo.app; sourceTree = "BUILT_PRODUCTS_DIR"; };
+		6697A98AC419A8F3895014E5 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../Jucer/JuceLibraryCode/JuceHeader.h; sourceTree = "SOURCE_ROOT"; };
+		7022F9128C82661F23258F40 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "dsp_filters.cpp"; path = "../../../DSPFilters/modules/dsp_filters/dsp_filters.cpp"; sourceTree = "SOURCE_ROOT"; };
+		C3EA2868A1D6522592CB31B9 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../Jucer/JuceLibraryCode/AppConfig.h; sourceTree = "SOURCE_ROOT"; };
+		DC770B0B6D6E8E893501F361 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "SOURCE_ROOT"; };
+		BAD2EA173C30AB4A11A7B413 = { isa = PBXGroup; children = (
+				7022F9128C82661F23258F40 ); name = DSPFilters; sourceTree = "<group>"; };
+		1FC17F896F78CF43CD3A8582 = { isa = PBXGroup; children = (
+				BAD2EA173C30AB4A11A7B413 ); name = DSPFiltersDemo; sourceTree = "<group>"; };
+		695122C87C1237EC57B689F2 = { isa = PBXGroup; children = (
+				C3EA2868A1D6522592CB31B9,
+				6697A98AC419A8F3895014E5 ); name = "Juce Library Code"; sourceTree = "<group>"; };
+		86138C6F2F64B628053E121A = { isa = PBXGroup; children = (
+				DC770B0B6D6E8E893501F361 ); name = Resources; sourceTree = "<group>"; };
+		550DF5D221734A8F5303AA98 = { isa = PBXGroup; children = (  ); name = Frameworks; sourceTree = "<group>"; };
+		96B0B276D85C7FCD337A9C43 = { isa = PBXGroup; children = (
+				3191001462A535BEA50717C1 ); name = Products; sourceTree = "<group>"; };
+		920B0D3F371F41B321242C02 = { isa = PBXGroup; children = (
+				1FC17F896F78CF43CD3A8582,
+				695122C87C1237EC57B689F2,
+				86138C6F2F64B628053E121A,
+				550DF5D221734A8F5303AA98,
+				96B0B276D85C7FCD337A9C43 ); name = Source; sourceTree = "<group>"; };
+		8C5A9C70706B158110D3D777 = { isa = XCBuildConfiguration; buildSettings = {
+				SRCROOT = "../Jucer";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT_ppc = macosx10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				ONLY_ACTIVE_ARCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_DEBUG=1",
+				"DEBUG=1",
+				"JUCER_XCODE_MAC_8DF12694=1"); }; name = Debug; };
+		2C2E2CC959CE76C4EE0FB1F0 = { isa = XCBuildConfiguration; buildSettings = {
+				SRCROOT = "../Jucer";
+				HEADER_SEARCH_PATHS = "../Jucer/JuceLibraryCode $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT_ppc = macosx10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_NDEBUG=1",
+				"NDEBUG=1",
+				"JUCER_XCODE_MAC_8DF12694=1"); }; name = Release; };
+		9CE6AE3E3B75257B57DE9C86 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "DSPFiltersDemo"; }; name = Debug; };
+		335912EB7622981419461C82 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "DSPFiltersDemo"; }; name = Release; };
+		07F005B39DAF27E82E8289E1 = { isa = XCConfigurationList; buildConfigurations = (
+				9CE6AE3E3B75257B57DE9C86,
+				335912EB7622981419461C82 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		55D0AD6DA9EBD6D5B0031AE3 = { isa = XCConfigurationList; buildConfigurations = (
+				8C5A9C70706B158110D3D777,
+				2C2E2CC959CE76C4EE0FB1F0 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		66AF866490138C0424162D7E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		69186E14F4F553DB30127D50 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				770349936140DF78B71542C1 ); runOnlyForDeploymentPostprocessing = 0; };
+		D386956AB8AAC5A1B4886058 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		8A31903F0BD109049556EFC5 = { isa = PBXNativeTarget; buildConfigurationList = 55D0AD6DA9EBD6D5B0031AE3; buildPhases = (
+				66AF866490138C0424162D7E,
+				69186E14F4F553DB30127D50,
+				D386956AB8AAC5A1B4886058 ); buildRules = ( ); dependencies = ( ); name = DSPFiltersDemo; productName = DSPFiltersDemo; productReference = 3191001462A535BEA50717C1; productInstallPath = "$(HOME)/Applications"; productType = "com.apple.product-type.application"; };
+		E9B1F6CF37B135843EFB530D = { isa = PBXProject; buildConfigurationList = 07F005B39DAF27E82E8289E1; compatibilityVersion = "Xcode 3.2"; hasScannedForEncodings = 0; mainGroup = 920B0D3F371F41B321242C02; projectDirPath = ""; projectRoot = ""; targets = ( 8A31903F0BD109049556EFC5 ); };
+	};
+	rootObject = E9B1F6CF37B135843EFB530D;
+}
