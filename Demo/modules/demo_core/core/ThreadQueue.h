@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_THREADQUEUE_H
 #define DSPDEMO_THREADQUEUE_H
 
-#include "Common.h"
-
 // Thread Queue
 // Easy to understand, powerful to use.
 // Concept, design, and implementation by Vinnie Falco.

@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_NOISEAUDIOSOURCE_H
 #define DSPDEMO_NOISEAUDIOSOURCE_H
 
-#include "Common.h"
-
 /*
  * Juce AudioSource that produces various types of noise
  *

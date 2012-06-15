@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "ThreadQueue.h"
-
 ThreadQueue::ThreadQueue ()
   : m_isClosed (false)
   , m_head (0)

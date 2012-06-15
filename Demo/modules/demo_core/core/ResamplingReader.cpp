@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "ResamplingReader.h"
-
 ResamplingReader::ResamplingReader (AudioFormatReader* reader)
   : m_reader (reader)
   , m_source (new AudioFormatReaderSource (m_reader, false))

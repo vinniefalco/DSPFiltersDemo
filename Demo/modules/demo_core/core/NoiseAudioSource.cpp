@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "NoiseAudioSource.h"
-
 NoiseAudioSource::NoiseAudioSource (bool pink)
   : m_pink (pink)
   , m_random (Time::currentTimeMillis())

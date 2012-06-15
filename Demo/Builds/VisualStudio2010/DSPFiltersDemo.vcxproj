@@ -55,7 +55,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;..\..\..\DSPFilters;..\..\..\JUCEAmalgam\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -94,7 +94,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Jucer\JuceLibraryCode;..\..\..\DSPFilters;..\..\..\JUCEAmalgam\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;JUCER_VS2010_2B5CCFA2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -126,9 +126,121 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\modules\demo_core\core\AudioOutput.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\binaries.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\FilteringAudioSource.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\NoiseAudioSource.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\ResamplingReader.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\ThreadQueue.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\demo_core.cpp"/>
+    <ClCompile Include="..\..\modules\demo_gui\gui\BrickWallChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\CpuMeter.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\FilterChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\FilterControls.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\GainChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\GroupDelayChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainApp.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainPanel.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainWindow.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\PhaseChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\PoleZeroChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\ResizableLayout.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SettingsPanel.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SettingsWindow.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SliderGroup.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\StepResponseChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\DSPFilters\modules\dsp_filters\dsp_filters.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_graphics_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_basics_amalgam.cpp"/>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_extra_amalgam.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\modules\demo_core\core\AudioOutput.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\binaries.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\bond.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\FilteringAudioSource.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\FilterListener.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\NoiseAudioSource.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\ResamplingReader.h"/>
+    <ClInclude Include="..\..\modules\demo_core\core\ThreadQueue.h"/>
+    <ClInclude Include="..\..\modules\demo_core\demo_core.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\BrickWallChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\ContentComponentConstrainer.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\CpuMeter.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\CustomSlider.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\FilterChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\FilterControls.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\GainChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\GroupDelayChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainApp.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainPanel.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainWindow.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\PhaseChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\PoleZeroChart.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\ResizableLayout.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SettingsPanel.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SettingsWindow.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SliderGroup.h"/>
+    <ClInclude Include="..\..\modules\demo_gui\gui\StepResponseChart.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_graphics_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_gui_basics_amalgam.h"/>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_gui_extra_amalgam.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\Jucer\JuceLibraryCode\JuceHeader.h"/>
   </ItemGroup>

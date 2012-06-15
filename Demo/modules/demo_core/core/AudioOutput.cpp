@@ -33,11 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "AudioOutput.h"
-#include "binaries.h"
-#include "bond.h"
-
 AudioOutput::AudioOutput()
   : m_audioDeviceManager (new AudioDeviceManager)
   , m_device (0)

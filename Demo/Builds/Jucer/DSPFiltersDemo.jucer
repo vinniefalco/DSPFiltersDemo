@@ -14,9 +14,9 @@
     <VS2010 targetFolder="../VisualStudio2010" libraryType="1" juceFolder="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="1" optimisation="1" targetName="DSPFiltersDemo"/>
+                       isDebug="1" optimisation="1" targetName="DSPFiltersDemo" headerPath="..\..\..\DSPFilters;..\..\..\JUCEAmalgam\include"/>
         <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
-                       isDebug="0" optimisation="2" targetName="DSPFiltersDemo"/>
+                       isDebug="0" optimisation="2" targetName="DSPFiltersDemo" headerPath="..\..\..\DSPFilters;..\..\..\JUCEAmalgam\include"/>
       </CONFIGURATIONS>
     </VS2010>
     <LINUX_MAKE targetFolder="../Linux" juceFolder="">
@@ -29,8 +29,146 @@
     </LINUX_MAKE>
   </EXPORTFORMATS>
   <MAINGROUP id="ur1vHy" name="DSPFiltersDemo">
+    <GROUP id="{880251F2-BDAB-F8F4-6BB8-35EF7A5D31D1}" name="Demo">
+      <GROUP id="{8E235BF2-BF5F-8360-E7C7-93C150955B7D}" name="demo_core">
+        <GROUP id="{03A0CB13-296B-AF8C-5599-7C407E0A7B1B}" name="core">
+          <FILE id="Cc2fyS" name="AudioOutput.cpp" compile="0" resource="0" file="../../modules/demo_core/core/AudioOutput.cpp"/>
+          <FILE id="YN38vz" name="AudioOutput.h" compile="0" resource="0" file="../../modules/demo_core/core/AudioOutput.h"/>
+          <FILE id="ym2845" name="binaries.cpp" compile="0" resource="0" file="../../modules/demo_core/core/binaries.cpp"/>
+          <FILE id="elF5Ug" name="binaries.h" compile="0" resource="0" file="../../modules/demo_core/core/binaries.h"/>
+          <FILE id="QS2X4E" name="bond.h" compile="0" resource="0" file="../../modules/demo_core/core/bond.h"/>
+          <FILE id="eHF3sX" name="FilteringAudioSource.cpp" compile="0" resource="0"
+                file="../../modules/demo_core/core/FilteringAudioSource.cpp"/>
+          <FILE id="SVWTKG" name="FilteringAudioSource.h" compile="0" resource="0"
+                file="../../modules/demo_core/core/FilteringAudioSource.h"/>
+          <FILE id="zBWMD5" name="FilterListener.h" compile="0" resource="0"
+                file="../../modules/demo_core/core/FilterListener.h"/>
+          <FILE id="VPw6Kg" name="NoiseAudioSource.cpp" compile="0" resource="0"
+                file="../../modules/demo_core/core/NoiseAudioSource.cpp"/>
+          <FILE id="u1MCRv" name="NoiseAudioSource.h" compile="0" resource="0"
+                file="../../modules/demo_core/core/NoiseAudioSource.h"/>
+          <FILE id="Q5fdNU" name="ResamplingReader.cpp" compile="0" resource="0"
+                file="../../modules/demo_core/core/ResamplingReader.cpp"/>
+          <FILE id="uzcUQz" name="ResamplingReader.h" compile="0" resource="0"
+                file="../../modules/demo_core/core/ResamplingReader.h"/>
+          <FILE id="tUz41b" name="ThreadQueue.cpp" compile="0" resource="0" file="../../modules/demo_core/core/ThreadQueue.cpp"/>
+          <FILE id="s0wY5R" name="ThreadQueue.h" compile="0" resource="0" file="../../modules/demo_core/core/ThreadQueue.h"/>
+        </GROUP>
+        <FILE id="UfHMbn" name="demo_core.cpp" compile="1" resource="0" file="../../modules/demo_core/demo_core.cpp"/>
+        <FILE id="eu6e89" name="demo_core.h" compile="0" resource="0" file="../../modules/demo_core/demo_core.h"/>
+      </GROUP>
+      <GROUP id="{A8331466-A414-3095-E30F-9BBC4C881769}" name="demo_gui">
+        <GROUP id="{292DFAD2-D38D-CDFF-072A-8CC8ABFD7739}" name="gui">
+          <FILE id="Hd82uO" name="BrickWallChart.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/BrickWallChart.cpp"/>
+          <FILE id="uH3tQE" name="BrickWallChart.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/BrickWallChart.h"/>
+          <FILE id="k7r6Vw" name="ContentComponentConstrainer.h" compile="0"
+                resource="0" file="../../modules/demo_gui/gui/ContentComponentConstrainer.h"/>
+          <FILE id="qc6jWk" name="CpuMeter.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/CpuMeter.cpp"/>
+          <FILE id="cGCtt5" name="CpuMeter.h" compile="0" resource="0" file="../../modules/demo_gui/gui/CpuMeter.h"/>
+          <FILE id="Ilujah" name="CustomSlider.h" compile="0" resource="0" file="../../modules/demo_gui/gui/CustomSlider.h"/>
+          <FILE id="Jpr1j1" name="FilterChart.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/FilterChart.cpp"/>
+          <FILE id="uRwbmd" name="FilterChart.h" compile="0" resource="0" file="../../modules/demo_gui/gui/FilterChart.h"/>
+          <FILE id="bFeFZq" name="FilterControls.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/FilterControls.cpp"/>
+          <FILE id="vvSWcO" name="FilterControls.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/FilterControls.h"/>
+          <FILE id="dlz3dZ" name="GainChart.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/GainChart.cpp"/>
+          <FILE id="ZBjHnG" name="GainChart.h" compile="0" resource="0" file="../../modules/demo_gui/gui/GainChart.h"/>
+          <FILE id="GMcMWk" name="GroupDelayChart.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/GroupDelayChart.cpp"/>
+          <FILE id="ROejfA" name="GroupDelayChart.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/GroupDelayChart.h"/>
+          <FILE id="wkZDT4" name="MainApp.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/MainApp.cpp"/>
+          <FILE id="L4PHoA" name="MainApp.h" compile="0" resource="0" file="../../modules/demo_gui/gui/MainApp.h"/>
+          <FILE id="FSJdpu" name="MainPanel.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/MainPanel.cpp"/>
+          <FILE id="SCQTPe" name="MainPanel.h" compile="0" resource="0" file="../../modules/demo_gui/gui/MainPanel.h"/>
+          <FILE id="yBCjYr" name="MainWindow.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/MainWindow.cpp"/>
+          <FILE id="jghxPF" name="MainWindow.h" compile="0" resource="0" file="../../modules/demo_gui/gui/MainWindow.h"/>
+          <FILE id="J7W4oA" name="PhaseChart.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/PhaseChart.cpp"/>
+          <FILE id="iSN5lf" name="PhaseChart.h" compile="0" resource="0" file="../../modules/demo_gui/gui/PhaseChart.h"/>
+          <FILE id="tYMBWH" name="PoleZeroChart.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/PoleZeroChart.cpp"/>
+          <FILE id="YqTFxN" name="PoleZeroChart.h" compile="0" resource="0" file="../../modules/demo_gui/gui/PoleZeroChart.h"/>
+          <FILE id="vpB2Xj" name="ResizableLayout.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/ResizableLayout.cpp"/>
+          <FILE id="NAQ5ka" name="ResizableLayout.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/ResizableLayout.h"/>
+          <FILE id="MizoA0" name="SettingsPanel.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/SettingsPanel.cpp"/>
+          <FILE id="mVAIz2" name="SettingsPanel.h" compile="0" resource="0" file="../../modules/demo_gui/gui/SettingsPanel.h"/>
+          <FILE id="vhI8mG" name="SettingsWindow.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/SettingsWindow.cpp"/>
+          <FILE id="D0d4UW" name="SettingsWindow.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/SettingsWindow.h"/>
+          <FILE id="SCjKx4" name="SliderGroup.cpp" compile="0" resource="0" file="../../modules/demo_gui/gui/SliderGroup.cpp"/>
+          <FILE id="lZ4RGD" name="SliderGroup.h" compile="0" resource="0" file="../../modules/demo_gui/gui/SliderGroup.h"/>
+          <FILE id="ROFbm2" name="StepResponseChart.cpp" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/StepResponseChart.cpp"/>
+          <FILE id="jdfZX2" name="StepResponseChart.h" compile="0" resource="0"
+                file="../../modules/demo_gui/gui/StepResponseChart.h"/>
+        </GROUP>
+      </GROUP>
+    </GROUP>
     <GROUP id="{A7C440B9-6B1F-CE1B-AFBD-7169AD1B0324}" name="DSPFilters">
       <FILE id="e7rjcb" name="dsp_filters.cpp" compile="1" resource="0" file="../../../DSPFilters/modules/dsp_filters/dsp_filters.cpp"/>
+    </GROUP>
+    <GROUP id="{E2AFCF30-BE79-9713-30E9-5FFD844CDA9D}" name="JUCE">
+      <FILE id="LyWsJE" name="juce_audio_basics_amalgam.cpp" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_basics_amalgam.cpp"/>
+      <FILE id="qZ845t" name="juce_audio_basics_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_basics_amalgam.h"/>
+      <FILE id="CaC093" name="juce_audio_basics_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_basics_amalgam.mm"/>
+      <FILE id="umhuBi" name="juce_audio_devices_amalgam.cpp" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_devices_amalgam.cpp"/>
+      <FILE id="MJu3gy" name="juce_audio_devices_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_devices_amalgam.h"/>
+      <FILE id="uCOL5s" name="juce_audio_devices_amalgam.mm" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_devices_amalgam.mm"/>
+      <FILE id="qJk1JE" name="juce_audio_formats_amalgam.cpp" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_formats_amalgam.cpp"/>
+      <FILE id="FdAzae" name="juce_audio_formats_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_audio_formats_amalgam.h"/>
+      <FILE id="RgMHyG" name="juce_audio_formats_amalgam.mm" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_audio_formats_amalgam.mm"/>
+      <FILE id="LEFo6v" name="juce_core_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_core_amalgam.cpp"/>
+      <FILE id="QmbG7i" name="juce_core_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_core_amalgam.h"/>
+      <FILE id="wmKUpR" name="juce_core_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_core_amalgam.mm"/>
+      <FILE id="c2jfjT" name="juce_data_structures_amalgam.cpp" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_data_structures_amalgam.cpp"/>
+      <FILE id="NkPOpz" name="juce_data_structures_amalgam.h" compile="0"
+            resource="0" file="../../../JUCEAmalgam/include/juce_data_structures_amalgam.h"/>
+      <FILE id="SqHAZo" name="juce_data_structures_amalgam.mm" compile="1"
+            resource="0" file="../../../JUCEAmalgam/include/juce_data_structures_amalgam.mm"/>
+      <FILE id="EtnlcV" name="juce_events_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_events_amalgam.cpp"/>
+      <FILE id="ApGqzb" name="juce_events_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_events_amalgam.h"/>
+      <FILE id="S2NWxM" name="juce_events_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_events_amalgam.mm"/>
+      <FILE id="JXjR0L" name="juce_graphics_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_graphics_amalgam.cpp"/>
+      <FILE id="aAptWd" name="juce_graphics_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_graphics_amalgam.h"/>
+      <FILE id="DUapux" name="juce_graphics_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_graphics_amalgam.mm"/>
+      <FILE id="OCmUyf" name="juce_gui_basics_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_basics_amalgam.cpp"/>
+      <FILE id="g4prZn" name="juce_gui_basics_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_basics_amalgam.h"/>
+      <FILE id="szrb0W" name="juce_gui_basics_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_basics_amalgam.mm"/>
+      <FILE id="rsXVbq" name="juce_gui_extra_amalgam.cpp" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_extra_amalgam.cpp"/>
+      <FILE id="Nw9m2N" name="juce_gui_extra_amalgam.h" compile="0" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_extra_amalgam.h"/>
+      <FILE id="vSYt1N" name="juce_gui_extra_amalgam.mm" compile="1" resource="0"
+            file="../../../JUCEAmalgam/include/juce_gui_extra_amalgam.mm"/>
     </GROUP>
   </MAINGROUP>
   <MODULES>

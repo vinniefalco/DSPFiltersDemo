@@ -33,9 +33,6 @@ THE SOFTWARE.
 
 *******************************************************************************/
 
-#include "Common.h"
-#include "FilteringAudioSource.h"
-
 // Caller is responsible for synchronization.
 // This is the proper way to do it.
 

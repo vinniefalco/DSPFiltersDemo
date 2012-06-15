@@ -36,8 +36,6 @@ THE SOFTWARE.
 #ifndef DSPDEMO_RESAMPLINGREADER_H
 #define DSPDEMO_RESAMPLINGREADER_H
 
-#include "Common.h"
-
 /*
  * An audio source, with an AudioFormatReader, and a built in
  * resampler that adjusts for playback versus recorded sampling rate

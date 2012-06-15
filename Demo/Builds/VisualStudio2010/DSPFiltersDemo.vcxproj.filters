@@ -5,19 +5,268 @@
     <Filter Include="DSPFiltersDemo">
       <UniqueIdentifier>{ADAA68B7-AE8F-0681-B58E-D1D109700FF2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DSPFiltersDemo\Demo">
+      <UniqueIdentifier>{70244BDC-57E3-C15B-F806-AD1A076CF7B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSPFiltersDemo\Demo\demo_core">
+      <UniqueIdentifier>{9D364F06-69CF-708A-8564-6FCBFE608CE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSPFiltersDemo\Demo\demo_core\core">
+      <UniqueIdentifier>{5C5D2010-3B98-C085-713F-544012BD18B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSPFiltersDemo\Demo\demo_gui">
+      <UniqueIdentifier>{2E9E5A7E-2924-3626-E63D-137236BAFA57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSPFiltersDemo\Demo\demo_gui\gui">
+      <UniqueIdentifier>{8E4A5B93-6E28-D62D-F5E3-54BF548BF765}</UniqueIdentifier>
+    </Filter>
     <Filter Include="DSPFiltersDemo\DSPFilters">
       <UniqueIdentifier>{56AABE47-99FE-985E-18DD-A32BED32CE16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSPFiltersDemo\JUCE">
+      <UniqueIdentifier>{FBD0AF81-74AA-2AEF-7B2C-CF8E383AF258}</UniqueIdentifier>
     </Filter>
     <Filter Include="Juce Library Code">
       <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\modules\demo_core\core\AudioOutput.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\binaries.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\FilteringAudioSource.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\NoiseAudioSource.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\ResamplingReader.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\core\ThreadQueue.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_core\demo_core.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\BrickWallChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\CpuMeter.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\FilterChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\FilterControls.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\GainChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\GroupDelayChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainApp.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainPanel.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\MainWindow.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\PhaseChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\PoleZeroChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\ResizableLayout.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SettingsPanel.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SettingsWindow.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\SliderGroup.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\demo_gui\gui\StepResponseChart.cpp">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\DSPFilters\modules\dsp_filters\dsp_filters.cpp">
       <Filter>DSPFiltersDemo\DSPFilters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_graphics_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_graphics_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_basics_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_basics_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_extra_amalgam.cpp">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\JUCEAmalgam\include\juce_gui_extra_amalgam.mm">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\modules\demo_core\core\AudioOutput.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\binaries.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\bond.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\FilteringAudioSource.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\FilterListener.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\NoiseAudioSource.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\ResamplingReader.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\core\ThreadQueue.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_core\demo_core.h">
+      <Filter>DSPFiltersDemo\Demo\demo_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\BrickWallChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\ContentComponentConstrainer.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\CpuMeter.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\CustomSlider.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\FilterChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\FilterControls.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\GainChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\GroupDelayChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainApp.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainPanel.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\MainWindow.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\PhaseChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\PoleZeroChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\ResizableLayout.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SettingsPanel.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SettingsWindow.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\SliderGroup.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\demo_gui\gui\StepResponseChart.h">
+      <Filter>DSPFiltersDemo\Demo\demo_gui\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_basics_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_devices_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_audio_formats_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_core_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_data_structures_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_events_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_graphics_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_gui_basics_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\JUCEAmalgam\include\juce_gui_extra_amalgam.h">
+      <Filter>DSPFiltersDemo\JUCE</Filter>
+    </ClInclude>
     <ClInclude Include="..\Jucer\JuceLibraryCode\AppConfig.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
