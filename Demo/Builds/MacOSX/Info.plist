@@ -8,7 +8,7 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string></string>
+    <string>com.yourcompany.DSPFiltersDemo</string>
     <key>CFBundleName</key>
     <string>DSPFiltersDemo</string>
     <key>CFBundlePackageType</key>

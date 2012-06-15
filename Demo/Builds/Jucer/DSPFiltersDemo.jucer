@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="OV2dRo" name="DSPFiltersDemo" projectType="guiapp" version="1.0.0"
-              jucerVersion="3.0.0">
+              jucerVersion="3.0.0" bundleIdentifier="com.yourcompany.DSPFiltersDemo">
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="../MacOSX" juceFolder="">
+    <XCODE_MAC targetFolder="../MacOSX" juceFolder="" objCExtraSuffix="rl4Ann"
+               extraFrameworks="CoreAudioKit,CoreAudio,AudioUnit,QuartzCore,IOKit,AudioToolbox,Cocoa;WebKit;CoreMIDI">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="DSPFiltersDemo"
                        osxSDK="default" osxCompatibility="default" osxArchitecture="default"
